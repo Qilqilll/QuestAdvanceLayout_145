@@ -20,10 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             PraktikumPAM_2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    TataLetakBoxColumnRow(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
                     )
+
                 }
             }
         }

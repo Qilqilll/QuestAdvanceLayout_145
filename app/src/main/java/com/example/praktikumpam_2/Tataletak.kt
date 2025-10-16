@@ -37,7 +37,7 @@ fun TataletakColumn(modifier: Modifier) {
 @Composable
 fun TataletakRow(modifier: Modifier) {
     Row(modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = arrangement.SpaceEvenly) {
+        horizontalArrangement = Arrangement.SpaceEvenly) {
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -91,9 +91,9 @@ fun TataLetakRowColumn(modifier: Modifier) {
         }
         //Kolom2
         Column(){
-            (text = "Komponen1Kolom2")
-            (text = "Komponen2Kolom2")
-            (text = "Komponen3Kolom2")
+            Text(text = "Komponen1Kolom2")
+            Text(text = "Komponen2Kolom2")
+            Text(text = "Komponen3Kolom2")
 
         }
     }
@@ -149,8 +149,12 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Cursive,
                 modifier = Modifier.align(
-                    alignment = Alignment.Center))
-
+                    alignment = Alignment.Center
+                )
             )
+
+
+
+        }
         }
     }
