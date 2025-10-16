@@ -3,6 +3,7 @@ package com.example.praktikumpam_2
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 
 @Composable
 fun TataletakColumn(modifier: Modifier) {
@@ -118,5 +119,20 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 .background(color = Color.Cyan),
             contentAlignment = Alignment.Center
         ) {
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit
+            )
+            Text(
+                text = "My Music",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(
+                    alignment = Alignment.Center))
 
+            )
         }
+    }
