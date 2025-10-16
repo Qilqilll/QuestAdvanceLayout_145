@@ -70,3 +70,12 @@ fun TataLetakRowColumn(modifier: Modifier) {
             Text(text = "Komponen2Kolom1")
             Text(text = "Komponen3Kolom1")
         }
+        //Kolom2
+        Column() {
+            (text = "Komponen1Kolom2")
+            (text = "Komponen2Kolom2")
+            (text = "Komponen3Kolom2")
+
+        }
+    }
+}
