@@ -65,4 +65,4 @@ fun ActivitasPertama(modifier: Modifier) {
                     Text(
                         stringResource(R.string.nama),
                         fontSize = 30.sp,
-
+                        fontFamily = FontFamily.Cursive,
