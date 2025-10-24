@@ -128,8 +128,10 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(12.dp),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                ) {
-                Row(
-                    modifier = Modifier.padding(12.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
+                Image(
+                    painter = painterResource(id = R.drawable.umy),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(80.dp)
+                        .padding(end = 16.dp)
+                )
