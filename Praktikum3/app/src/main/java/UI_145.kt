@@ -155,3 +155,4 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                 }
             }
         }
+        Spacer(modifier = Modifier.height(40.dp))
