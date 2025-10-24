@@ -102,3 +102,7 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                         fontFamily = FontFamily.Cursive,
                         color = Color.White
                     )
+                    Text(
+                        text = "20230140110",
+                        fontSize = 18.sp,
+                        color = Color.White
