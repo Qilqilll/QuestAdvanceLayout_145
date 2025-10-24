@@ -106,3 +106,12 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                         text = "20230140110",
                         fontSize = 18.sp,
                         color = Color.White
+                    )
+                    Text(
+                        text = "Sumatra, Jambi",
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
+            }
+        }
