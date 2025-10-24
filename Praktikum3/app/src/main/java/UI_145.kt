@@ -156,3 +156,12 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             }
         }
         Spacer(modifier = Modifier.height(40.dp))
+        // Footer
+        Text(
+            text = "copyright, 2025>",
+            fontSize = 14.sp,
+            color = Color.Gray,
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
+    }
+}
