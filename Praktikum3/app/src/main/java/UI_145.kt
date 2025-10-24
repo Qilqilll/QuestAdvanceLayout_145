@@ -83,3 +83,8 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = Color.Blue
             )
+        ) {
+            Row(
+                modifier = Modifier.padding(12.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
