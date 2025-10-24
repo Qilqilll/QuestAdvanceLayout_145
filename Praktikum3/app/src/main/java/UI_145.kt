@@ -147,3 +147,11 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                         fontSize = 18.sp,
                         color = Color.White
                     )
+                    Text(
+                        text = "Maluku, Ambon",
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
+            }
+        }
