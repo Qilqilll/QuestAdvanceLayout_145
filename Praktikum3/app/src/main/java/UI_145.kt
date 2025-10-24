@@ -135,3 +135,10 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                         .size(80.dp)
                         .padding(end = 16.dp)
                 )
+                Column {
+                    Text(
+                        text = "Syandy Arda",
+                        fontSize = 28.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White
+                    )
