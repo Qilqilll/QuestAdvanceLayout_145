@@ -1,16 +1,7 @@
 package com.example.testing
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
@@ -19,7 +10,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -27,68 +17,60 @@ import androidx.compose.ui.unit.sp
 import com.example.praktikum3.R
 
 @Composable
-fun ActivitasPertama(modifier: Modifier) {
+fun ActivitasPertama(modifier: Modifier = Modifier) {
     Column(
         modifier = Modifier
-            .padding(top = 70.dp)
-            .fillMaxSize(),
+            .fillMaxSize()
+            .padding(top = 60.dp, start = 16.dp, end = 16.dp, bottom = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        // Header
         Text(
-            stringResource(R.string.prodi),
-            fontSize = 35.sp,
-            fontWeight = FontWeight.Bold
+            text = "Teknologi Informasi",
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color(0xFF4A148C)
         )
         Text(
-            stringResource(R.string.univ),
-            fontSize = 22.sp
+            text = "Universitas Muhammadiyah Yogyakarta",
+            fontSize = 18.sp,
+            color = Color.Gray
         )
-        Spacer(modifier = Modifier.height(25.dp))
+
+        Spacer(modifier = Modifier.height(30.dp))
+
+        // === CARD 1 ===
         Card(
             modifier = Modifier
-                .fillMaxWidth(1f)
-                .padding(12.dp),
+                .fillMaxWidth()
+                .padding(8.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )
         ) {
-            Row() {
-                val gambar = painterResource(R.drawable.umy)
+            Row(
+                modifier = Modifier.padding(12.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
                 Image(
-                    painter = gambar,
+                    painter = painterResource(id = R.drawable.umy),
                     contentDescription = null,
                     modifier = Modifier
-                        .size(100.dp)
-                        .padding(5.dp)
+                        .size(80.dp)
+                        .padding(end = 16.dp)
                 )
-                Spacer(modifier = Modifier.width(30.dp))
-                Column() {
+                Column {
                     Text(
-                        stringResource(R.string.nama),
-                        fontSize = 30.sp,
+                        text = "Muhammad Aqil Firdaus",
+                        fontSize = 28.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        color = Color.White
                     )
                     Text(
-                        stringResource(R.string.alamat),
-                        fontSize = 20.sp,
-                        color = Color.Yellow,
-                        modifier = Modifier.padding(top = 10.dp)
+                        text = "Jawa barat, Bekasi",
+                        fontSize = 18.sp,
+                        color = Color.Yellow
                     )
                 }
             }
         }
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-        ) {
-            Text(
-                stringResource(R.string.copy),
-                modifier = Modifier
-                    .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
-            )
-        }
-    }
-}
