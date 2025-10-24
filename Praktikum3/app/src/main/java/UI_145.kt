@@ -94,3 +94,11 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .size(80.dp)
                         .padding(end = 16.dp)
+                )
+                Column {
+                    Text(
+                        text = "Damar Sadewa Putra",
+                        fontSize = 28.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White
+                    )
